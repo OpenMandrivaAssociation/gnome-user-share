@@ -6,6 +6,7 @@ License: GPL
 Group: System/Servers
 URL: http://www.gnome.org
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires: avahi
 Requires: apache
 Requires: apache-mod_dav
