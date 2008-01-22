@@ -14,6 +14,7 @@ BuildRequires: apache
 BuildRequires: libGConf2-devel
 BuildRequires: libavahi-client-devel libavahi-glib-devel
 BuildRequires: libglade2.0-devel
+BuildRequires: dbus-glib-devel
 BuildRequires: perl-XML-Parser
 BuildRequires: GConf2
 %description
