@@ -1,6 +1,6 @@
 Summary: Gnome user file sharing
 Name: gnome-user-share
-Version: 0.11
+Version: 0.20
 Release: %mkrel 1
 License: GPL
 Group: System/Servers
@@ -60,6 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_datadir}/gnome-user-share
 %_datadir/applications/gnome-user-share-properties.desktop
+%_datadir/gnome/autostart/gnome-user-share.desktop
 %{_sysconfdir}/gconf/schemas/desktop_gnome_file_sharing.schemas
 %_libexecdir/gnome-user-share
 
