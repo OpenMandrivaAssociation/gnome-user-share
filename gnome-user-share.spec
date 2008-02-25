@@ -1,6 +1,6 @@
 Summary: Gnome user file sharing
 Name: gnome-user-share
-Version: 0.21
+Version: 0.22
 Release: %mkrel 1
 License: GPL
 Group: System/Servers
@@ -51,9 +51,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 %post_install_gconf_schemas desktop_gnome_file_sharing
+%update_icon_cache hicolor
 
 %preun
 %preun_uninstall_gconf_schemas desktop_gnome_file_sharing
+
+%postun
+%clean_icon_cache hicolor
 
 %files -f %name.lang
 %defattr(-,root,root,-)
@@ -64,5 +68,6 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/gnome/autostart/gnome-user-share.desktop
 %{_sysconfdir}/gconf/schemas/desktop_gnome_file_sharing.schemas
 %_libexecdir/gnome-user-share
+%_datadir/icons/hicolor/*/apps/*.*
 
 
