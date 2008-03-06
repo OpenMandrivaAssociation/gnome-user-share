@@ -1,15 +1,16 @@
-Summary: Gnome user file sharing
+Summary: GNOME user file sharing
 Name: gnome-user-share
 Version: 0.22
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL
 Group: System/Servers
 URL: http://www.gnome.org
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires: avahi
-Requires: apache
-Requires: apache-mod_dav
+Suggests: apache
+Suggests: apache-mod_dav
+Requires: obex-data-server >= 0.3
 BuildRequires: apache
 BuildRequires: libGConf2-devel
 BuildRequires: libavahi-client-devel libavahi-glib-devel
@@ -18,19 +19,7 @@ BuildRequires: dbus-glib-devel
 BuildRequires: perl-XML-Parser
 BuildRequires: GConf2
 %description
-gnome-user-share is a small package that binds together various free
-software projects to bring easy to use user-level file sharing to the
-masses.
-
-The program is meant to run in the background when the user is logged
-in, and when file sharing is enabled a webdav server is started that
-shares the $HOME/Public folder. The share is then published to all
-computers on the local network using mDNS/rendezvous, so that it shows
-up in the Network location in Gnome.
-
-The dav server used is apache, so you need that installed. Howl is
-used for mDNS support, so you need to have that installed and
-mDNSResolver running.
+This program enables user to share directories through Webdav or Bluetooth (over ObexFTP).
 
 %prep
 %setup -q
