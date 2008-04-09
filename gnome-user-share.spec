@@ -1,7 +1,7 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
-Version: 0.22
-Release: %mkrel 2
+Version: 0.31
+Release: %mkrel 1
 License: GPL
 Group: System/Servers
 URL: http://www.gnome.org
@@ -51,11 +51,11 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %name.lang
 %defattr(-,root,root,-)
 %doc README ChangeLog NEWS
+%_sysconfdir/xdg/autostart/gnome-user-share.desktop
+%{_sysconfdir}/gconf/schemas/desktop_gnome_file_sharing.schemas
 %{_bindir}/*
 %{_datadir}/gnome-user-share
 %_datadir/applications/gnome-user-share-properties.desktop
-%_datadir/gnome/autostart/gnome-user-share.desktop
-%{_sysconfdir}/gconf/schemas/desktop_gnome_file_sharing.schemas
 %_libexecdir/gnome-user-share
 %_datadir/icons/hicolor/*/apps/*.*
 
