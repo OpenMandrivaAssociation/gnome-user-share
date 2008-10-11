@@ -1,8 +1,8 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
-Version: 0.31
-Release: %mkrel 2
-License: GPL
+Version: 0.40
+Release: %mkrel 1
+License: GPLv2+
 Group: System/Servers
 URL: http://www.gnome.org
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
@@ -15,8 +15,9 @@ BuildRequires: apache
 BuildRequires: libGConf2-devel
 BuildRequires: libavahi-client-devel libavahi-glib-devel
 BuildRequires: libglade2.0-devel
+BuildRequires: libnotify-devel
 BuildRequires: dbus-glib-devel
-BuildRequires: perl-XML-Parser
+BuildRequires: intltool
 BuildRequires: GConf2
 %description
 This program enables user to share directories through Webdav or Bluetooth (over ObexFTP).
