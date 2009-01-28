@@ -16,6 +16,7 @@ BuildRequires: libglade2.0-devel
 BuildRequires: libnotify-devel
 BuildRequires: dbus-glib-devel
 BuildRequires: intltool
+BuildRequires: gnome-doc-utils
 BuildRequires: GConf2
 %description
 This program enables user to share directories through Webdav or Bluetooth (over ObexFTP).
