@@ -8,7 +8,7 @@ URL: http://www.gnome.org
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Suggests: apache
-Suggests: apache-mod_dnssd
+Suggests: apache-mod_dnssd >= 0.6
 Requires: obex-data-server >= 0.3
 BuildRequires: apache-mod_dnssd
 BuildRequires: libGConf2-devel
@@ -25,7 +25,7 @@ This program enables user to share directories through Webdav or Bluetooth (over
 %setup -q
 
 %build
-%configure2_5x --with-httpd-version=2.2 --with-modules-path=%_sysconfdir/httpd/extramodules
+%configure2_5x --with-modules-path=%_sysconfdir/httpd/extramodules
 %make
 
 %install
