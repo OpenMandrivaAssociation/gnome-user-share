@@ -1,7 +1,7 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
 Version: 2.26.0
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv2+
 Group: System/Servers
 URL: http://www.gnome.org
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT %name.lang
 export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 %makeinstall_std
 %find_lang %name --with-gnome
-for omf in %buildroot%_datadir/omf/*/*-??*.omf;do 
+for omf in %buildroot%_datadir/omf/*/%name-??*.omf;do 
 echo "%lang($(basename $omf|sed -e s/.*-// -e s/.omf//)) $(echo $omf|sed -e s!%buildroot!!)" >> %name.lang
 done
 
