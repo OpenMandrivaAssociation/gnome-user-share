@@ -1,7 +1,7 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
-Version: 2.26.0
-Release: %mkrel 2
+Version: 2.27.0
+Release: %mkrel 1
 License: GPLv2+
 Group: System/Servers
 URL: http://www.gnome.org
@@ -14,6 +14,7 @@ BuildRequires: apache-mod_dnssd
 BuildRequires: libGConf2-devel
 BuildRequires: libglade2.0-devel
 BuildRequires: libnotify-devel
+BuildRequires: gnome-bluetooth-devel
 BuildRequires: dbus-glib-devel
 BuildRequires: intltool
 BuildRequires: gnome-doc-utils
