@@ -16,6 +16,7 @@ BuildRequires: libglade2.0-devel
 BuildRequires: libnotify-devel
 BuildRequires: gnome-bluetooth-devel
 BuildRequires: dbus-glib-devel
+BuildRequires: libcanberra-devel
 BuildRequires: intltool
 BuildRequires: gnome-doc-utils
 BuildRequires: GConf2
