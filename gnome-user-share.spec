@@ -17,6 +17,7 @@ BuildRequires: libnotify-devel
 BuildRequires: gnome-bluetooth-devel
 BuildRequires: dbus-glib-devel
 BuildRequires: libcanberra-devel
+BuildRequires: unique-devel
 BuildRequires: intltool
 BuildRequires: gnome-doc-utils
 BuildRequires: GConf2
