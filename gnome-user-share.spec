@@ -1,6 +1,6 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
-Version: 2.28.1
+Version: 2.28.2
 Release: %mkrel 1
 License: GPLv2+
 Group: System/Servers
