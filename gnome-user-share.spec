@@ -1,11 +1,13 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
 Version: 2.28.2
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv2+
 Group: System/Servers
 URL: http://www.gnome.org
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
+#gw fix location of dnssd module
+Patch: gnome-user-share-2.28.2-fix-config.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Suggests: apache
 Suggests: apache-mod_dnssd >= 0.6
@@ -26,9 +28,10 @@ This program enables user to share directories through Webdav or Bluetooth (over
 
 %prep
 %setup -q
+%patch -p1
 
 %build
-%configure2_5x --with-modules-path=%_sysconfdir/httpd/extramodules
+%configure2_5x --with-modules-path=%_sysconfdir/httpd/modules
 %make
 
 %install
