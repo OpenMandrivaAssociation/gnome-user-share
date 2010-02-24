@@ -1,7 +1,7 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
-Version: 2.28.2
-Release: %mkrel 2
+Version: 2.29.91
+Release: %mkrel 1
 License: GPLv2+
 Group: System/Servers
 URL: http://www.gnome.org
@@ -20,6 +20,7 @@ BuildRequires: gnome-bluetooth-devel
 BuildRequires: dbus-glib-devel
 BuildRequires: libcanberra-devel
 BuildRequires: unique-devel
+BuildRequires: nautilus-devel
 BuildRequires: intltool
 BuildRequires: gnome-doc-utils
 BuildRequires: GConf2
@@ -70,4 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/icons/hicolor/*/apps/*.*
 %dir %_datadir/omf/%name
 %_datadir/omf/%name/%name-C.omf
-
+%_libdir/nautilus/extensions-2.0/libnautilus-share-extension.so
+%_libdir/nautilus/extensions-2.0/libnautilus-share-extension.la
