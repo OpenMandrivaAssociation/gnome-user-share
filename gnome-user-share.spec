@@ -1,7 +1,7 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
 Version: 2.30.0
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv2+
 Group: System/Servers
 URL: http://www.gnome.org
