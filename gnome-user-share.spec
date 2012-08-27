@@ -55,4 +55,6 @@ find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 %{_datadir}/applications/gnome-user-share-properties.desktop
 %{_datadir}/gnome-user-share
 %{_datadir}/icons/hicolor/*/apps/*.*
+%_datadir/GConf/gsettings/gnome-user-share.convert
+%_datadir/glib-2.0/schemas/org.gnome.desktop.file-sharing.gschema.xml
 
