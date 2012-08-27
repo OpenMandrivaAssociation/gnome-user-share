@@ -45,16 +45,10 @@ This program enables user to share directories through Webdav or Bluetooth
 find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 %find_lang %{name} --with-gnome
 
-%post
-%post_install_gconf_schemas desktop_gnome_file_sharing
-
-%preun
-%preun_uninstall_gconf_schemas desktop_gnome_file_sharing
 
 %files -f %{name}.lang
 %doc README ChangeLog NEWS
 %{_sysconfdir}/xdg/autostart/gnome-user-share.desktop
-%{_sysconfdir}/gconf/schemas/desktop_gnome_file_sharing.schemas
 %{_bindir}/*
 %{_libexecdir}/gnome-user-share
 %{_libdir}/nautilus/extensions-3.0/libnautilus-share-extension.so
