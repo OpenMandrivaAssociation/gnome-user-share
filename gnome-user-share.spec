@@ -10,6 +10,7 @@ Source0: http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.x
 BuildRequires:	gnome-doc-utils
 BuildRequires:	intltool
 BuildRequires:	itstool
+BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gconf-2.0)
