@@ -1,6 +1,6 @@
 Summary: GNOME user file sharing
 Name: gnome-user-share
-Version: 3.0.3
+Version: 3.0.4
 Release: 1
 License: GPLv2+
 Group: System/Servers
@@ -57,4 +57,3 @@ find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 %{_datadir}/icons/hicolor/*/apps/*.*
 %_datadir/GConf/gsettings/gnome-user-share.convert
 %_datadir/glib-2.0/schemas/org.gnome.desktop.file-sharing.gschema.xml
-
