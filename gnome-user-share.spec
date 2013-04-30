@@ -1,3 +1,5 @@
+%define url_ver %(echo %{version}|cut -d. -f1,2)
+
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
 Version:	3.0.4
@@ -5,7 +7,7 @@ Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		http://www.gnome.org
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	intltool
 BuildRequires:	itstool
