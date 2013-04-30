@@ -1,13 +1,12 @@
-Summary: GNOME user file sharing
-Name: gnome-user-share
-Version: 3.0.4
-Release: 1
-License: GPLv2+
-Group: System/Servers
-URL: http://www.gnome.org
-Source0: http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+Summary:	GNOME user file sharing
+Name:		gnome-user-share
+Version:	3.0.4
+Release:	1
+License:	GPLv2+
+Group:		System/Servers
+Url:		http://www.gnome.org
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 
-BuildRequires:	gnome-doc-utils
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
@@ -16,14 +15,14 @@ BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gconf-2.0)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.28
 BuildRequires:	pkgconfig(gnome-bluetooth-1.0)
+BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libcanberra-gtk3)
 BuildRequires:	pkgconfig(libnautilus-extension)
 BuildRequires:	pkgconfig(libnotify)
-
-Suggests: apache
-Suggests: apache-mod_dnssd >= 0.6
-Requires: obex-data-server >= 0.3
+Suggests:	apache
+Suggests:	apache-mod_dnssd >= 0.6
+Requires:	obex-data-server >= 0.3
 
 %description
 This program enables user to share directories through Webdav or Bluetooth 
@@ -42,9 +41,7 @@ This program enables user to share directories through Webdav or Bluetooth
 
 %install
 %makeinstall_std
-find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 %find_lang %{name} --with-gnome
-
 
 %files -f %{name}.lang
 %doc README ChangeLog NEWS
@@ -54,6 +51,7 @@ find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 %{_libdir}/nautilus/extensions-3.0/libnautilus-share-extension.so
 %{_datadir}/applications/gnome-user-share-properties.desktop
 %{_datadir}/gnome-user-share
-%{_datadir}/icons/hicolor/*/apps/*.*
-%_datadir/GConf/gsettings/gnome-user-share.convert
-%_datadir/glib-2.0/schemas/org.gnome.desktop.file-sharing.gschema.xml
+%{_datadir}/GConf/gsettings/gnome-user-share.convert
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.file-sharing.gschema.xml
+%{_iconsdir}/hicolor/*/apps/*.*
+
