@@ -2,7 +2,7 @@
 
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
-Version:	3.14.0
+Version:	 3.14.2
 Release:	2
 License:	GPLv2+
 Group:		System/Servers
@@ -26,7 +26,7 @@ Suggests:	apache-mod_dnssd >= 0.6
 Requires:	obex-data-server >= 0.3
 
 %description
-This program enables user to share directories through Webdav or Bluetooth 
+This program enables user to share directories through Webdav or Bluetooth
 (over ObexFTP).
 
 %prep
