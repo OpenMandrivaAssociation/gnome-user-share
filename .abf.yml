@@ -1,4 +1,5 @@
 removed_sources:
   gnome-user-share-3.14.0.tar.xz: 9d4c3602710facb5ddb5ebd8e2dbdbde212ee780
-sources:
   gnome-user-share-3.14.2.tar.xz: 16e998539c38318c1f039cd9ed2e4e951e7ea9e0
+sources:
+  gnome-user-share-3.18.0.tar.xz: d76c50e03fb126913dcb69ea4dbf810f29be8e4d
