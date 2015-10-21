@@ -47,13 +47,10 @@ This program enables user to share directories through Webdav or Bluetooth
 
 %files -f %{name}.lang
 %doc README ChangeLog NEWS
-%{_sysconfdir}/xdg/autostart/gnome-user-share-obexpush.desktop
-%{_libexecdir}/gnome-user-share-obexpush
 %{_libexecdir}/gnome-user-share-webdav
 %{_libdir}/nautilus/extensions-3.0/libnautilus-share-extension.so
 %{_datadir}/applications/gnome-user-share-webdav.desktop
 %{_datadir}/gnome-user-share
 %{_datadir}/GConf/gsettings/gnome-user-share.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.file-sharing.gschema.xml
-%{_iconsdir}/hicolor/*/apps/*.*
 
