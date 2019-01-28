@@ -54,4 +54,5 @@ This program enables user to share directories through Webdav or Bluetooth
 %{_datadir}/gnome-user-share
 %{_datadir}/GConf/gsettings/gnome-user-share.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.file-sharing.gschema.xml
+%{_userunitdir}/gnome-user-share-webdav.service
 
