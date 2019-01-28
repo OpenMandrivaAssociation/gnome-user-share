@@ -22,6 +22,7 @@ BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libcanberra-gtk3)
 BuildRequires:	pkgconfig(libnautilus-extension)
 BuildRequires:	pkgconfig(libnotify)
+BuildRequires:	pkgconfig(libsystemd)
 Suggests:	apache
 Suggests:	apache-mod_dnssd >= 0.6
 Requires:	obex-data-server >= 0.3
