@@ -3,8 +3,8 @@
 
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
-Version:	 3.18.0
-Release:	2
+Version:	3.28.0
+Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		http://www.gnome.org
@@ -39,10 +39,10 @@ This program enables user to share directories through Webdav or Bluetooth
 	--disable-schemas-install \
 	--disable-scrollkeeper
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
