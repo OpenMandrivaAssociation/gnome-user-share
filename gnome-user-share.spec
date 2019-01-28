@@ -3,8 +3,8 @@
 
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
-Version:	 3.18.0
-Release:	2
+Version:	3.28.0
+Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		http://www.gnome.org
@@ -22,6 +22,7 @@ BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libcanberra-gtk3)
 BuildRequires:	pkgconfig(libnautilus-extension)
 BuildRequires:	pkgconfig(libnotify)
+BuildRequires:	pkgconfig(libsystemd)
 Suggests:	apache
 Suggests:	apache-mod_dnssd >= 0.6
 Requires:	obex-data-server >= 0.3
@@ -39,10 +40,10 @@ This program enables user to share directories through Webdav or Bluetooth
 	--disable-schemas-install \
 	--disable-scrollkeeper
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
@@ -53,4 +54,5 @@ This program enables user to share directories through Webdav or Bluetooth
 %{_datadir}/gnome-user-share
 %{_datadir}/GConf/gsettings/gnome-user-share.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.file-sharing.gschema.xml
+%{_userunitdir}/gnome-user-share-webdav.service
 
