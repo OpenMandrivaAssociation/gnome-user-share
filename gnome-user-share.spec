@@ -3,7 +3,7 @@
 
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
-Version:	3.32.0
+Version:	3.32.0.1
 Release:	1
 License:	GPLv2+
 Group:		System/Servers
