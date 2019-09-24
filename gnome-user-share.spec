@@ -3,13 +3,14 @@
 
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
-Version:	3.32.0.1
+Version:	3.34.0
 Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		http://www.gnome.org
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:	meson
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
@@ -35,15 +36,12 @@ This program enables user to share directories through Webdav or Bluetooth
 %setup -q
 
 %build
-%configure2_5x \
-	--with-modules-path=%{_sysconfdir}/httpd/modules \
-	--disable-schemas-install \
-	--disable-scrollkeeper
-
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
+
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
