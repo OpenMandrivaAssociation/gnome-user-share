@@ -45,7 +45,7 @@ This program enables user to share directories through Webdav or Bluetooth
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc README ChangeLog NEWS
+%doc README NEWS
 %{_libexecdir}/gnome-user-share-webdav
 %{_libdir}/nautilus/extensions-3.0/libnautilus-share-extension.so
 %{_datadir}/applications/gnome-user-share-webdav.desktop
