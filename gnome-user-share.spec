@@ -21,7 +21,7 @@ BuildRequires:	pkgconfig(gnome-bluetooth-1.0)
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libcanberra-gtk3)
-BuildRequires:	pkgconfig(libnautilus-extension)
+#BuildRequires:	pkgconfig(libnautilus-extension)
 BuildRequires:	pkgconfig(libnotify)
 BuildRequires:	pkgconfig(libsystemd)
 Suggests:	apache
