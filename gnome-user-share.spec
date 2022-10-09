@@ -3,8 +3,8 @@
 
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
-Version:	3.34.0
-Release:	5
+Version:	43.0
+Release:	1
 License:	GPLv2+
 Group:		System/Servers
 Url:		http://www.gnome.org
@@ -21,7 +21,7 @@ BuildRequires:	pkgconfig(gnome-bluetooth-1.0)
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libcanberra-gtk3)
-BuildRequires:	pkgconfig(libnautilus-extension)
+#BuildRequires:	pkgconfig(libnautilus-extension)
 BuildRequires:	pkgconfig(libnotify)
 BuildRequires:	pkgconfig(libsystemd)
 Suggests:	apache
@@ -47,7 +47,7 @@ This program enables user to share directories through Webdav or Bluetooth
 %files -f %{name}.lang
 %doc README NEWS
 %{_libexecdir}/gnome-user-share-webdav
-%{_libdir}/nautilus/extensions-3.0/libnautilus-share-extension.so
+#{_libdir}/nautilus/extensions-3.0/libnautilus-share-extension.so
 %{_datadir}/applications/gnome-user-share-webdav.desktop
 %{_datadir}/gnome-user-share
 %{_datadir}/GConf/gsettings/gnome-user-share.convert
