@@ -4,11 +4,11 @@
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
 Version:	43.0
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		System/Servers
-Url:		http://www.gnome.org
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/%{url_ver}/%{name}-%{version}.tar.xz
+Url:		https://www.gnome.org
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	meson
 BuildRequires:	intltool
