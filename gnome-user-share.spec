@@ -11,7 +11,7 @@ Url:		https://www.gnome.org
 Source0:	https://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	meson
-BuildRequires:  rust
+BuildRequires:  rust-packaging
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
