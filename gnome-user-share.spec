@@ -3,7 +3,7 @@
 
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
-Version:	47.2
+Version:	48.0
 Release:	1
 License:	GPLv2+
 Group:		System/Servers
@@ -11,6 +11,7 @@ Url:		https://www.gnome.org
 Source0:	https://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	meson
+BuildRequires:  rust
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
