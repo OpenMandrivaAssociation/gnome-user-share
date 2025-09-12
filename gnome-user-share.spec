@@ -4,7 +4,7 @@
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
 Version:	48.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://www.gnome.org
