@@ -9,6 +9,7 @@ License:	GPLv2+
 Group:		System/Servers
 Url:		https://www.gnome.org
 Source0:	https://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/%{url_ver}/%{name}-%{version}.tar.xz
+Source1:  vendor.tar.xz
 
 BuildRequires:	meson
 BuildRequires:  gettext
@@ -35,7 +36,17 @@ This program enables user to share directories through Webdav or Bluetooth
 (over ObexFTP).
 
 %prep
-%setup -q
+%autosetup -a1 -p1
+%cargo_prep -v vendor
+
+cat >>Cargo.toml <<EOF
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+EOF
 
 %build
 %meson
