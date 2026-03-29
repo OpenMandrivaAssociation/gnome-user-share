@@ -4,7 +4,7 @@
 Summary:	GNOME user file sharing
 Name:		gnome-user-share
 Version:	48.2
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Servers
 Url:		https://www.gnome.org
@@ -16,7 +16,7 @@ BuildRequires:  gettext
 BuildRequires:  rust-packaging
 BuildRequires:	intltool
 BuildRequires:	itstool
-BuildRequires:	libxml2-utils
+BuildRequires:	libxml2-utils >= 2.15.2
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.28
